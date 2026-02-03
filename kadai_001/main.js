@@ -55,7 +55,7 @@ createText();
 // キー入力の判定
 const keyPress = (e) => {
   // 誤タイプの場合
-  if (e.key !== untyped.substring(1, 0)) {
+  if (e.key !== untyped.substring(0, 1)) {
     wrap.classList.add('mistyped');
     setTimeout(() => {
       wrap.classList.remove('mistyped');
